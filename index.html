@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حفظ النعمة | منصة فائض الطعام</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">♡</span><span>حفظ <b>النعمة</b><small>منصة إدارة فائض الطعام</small></span></a><nav><a class="active" href="#dashboard">الرئيسية</a><a href="#meals">الوجبات المتاحة</a><a href="#donate">إضافة فائض</a></nav><div class="top-actions"><span class="status"><i></i> النظام يعمل</span><button class="avatar" title="الحساب">م</button></div></header>
+<main class="container">
+<section class="welcome" id="dashboard"><div><p class="eyebrow">معًا نحو أثر أجمل</p><h1>كل نعمة تستحق أن <span>تُحفظ</span> 🌿</h1><p class="sub">نربط فائض الطعام بمن يحتاجه، لنقلل الهدر ونصنع أثرًا مستدامًا في مجتمعنا.</p><div class="hero-actions"><a class="btn primary" href="#meals">استعرض الوجبات <span>←</span></a><a class="btn secondary" href="#donate">أضف فائض طعام +</a></div></div><div class="hero-art"><div class="sun"></div><div class="plate"><div class="food">🥗</div></div><div class="leaf leaf1">✦</div><div class="leaf leaf2">✧</div><div class="hero-note"><span>♻</span><div><b>نعمة محفوظة</b><small>أثر يبدأ بخطوة</small></div></div></div></section>
+<section class="stats"><article><div class="stat-icon green">♧</div><div><p>وجبات متاحة</p><strong id="availableCount">24</strong><small>جاهزة للاستفادة</small></div></article><article><div class="stat-icon orange">♡</div><div><p>وجبة تم إنقاذها</p><strong>1,280</strong><small>من الهدر هذا الشهر</small></div></article><article><div class="stat-icon blue">⌖</div><div><p>جهات مشاركة</p><strong>38</strong><small>مطاعم وجمعيات</small></div></article><article><div class="stat-icon purple">♻</div><div><p>معدل الاستفادة</p><strong>86%</strong><small>من الفائض المنشور</small></div></article></section>
+<section class="section-head" id="meals"><div><p class="eyebrow">فرص متاحة الآن</p><h2>الوجبات القريبة منك</h2><p>اختر الفائض المناسب واحجزه للجهة المستفيدة.</p></div><button class="text-btn" id="showAll">عرض الكل ←</button></section>
+<div class="filters"><label class="search">⌕ <input id="searchInput" placeholder="ابحث عن وجبة أو مطعم..."></label><select id="categoryFilter"><option value="all">كل التصنيفات</option><option>وجبات جاهزة</option><option>مخبوزات</option><option>خضروات وفواكه</option><option>حلويات</option></select><select id="sortFilter"><option value="soon">الأقرب انتهاءً</option><option value="quantity">الأكثر كمية</option></select></div>
+<section class="meal-grid" id="mealGrid"></section>
+<section class="donate-panel" id="donate"><div class="donate-copy"><p class="eyebrow">شارك في حفظ النعمة</p><h2>عندك فائض؟ خلّه يوصل لمحتاجه</h2><p>أضف تفاصيل الطعام المتوفر وسنساعد في إيصاله إلى الجهات المستفيدة.</p><div class="donate-benefits"><span>✓ خطوات بسيطة</span><span>✓ وصول للجهات القريبة</span><span>✓ أثر يستمر</span></div></div><form id="donateForm" class="donate-form"><div class="form-title"><span>＋</span><div><b>إضافة فائض طعام</b><small>املأ البيانات الأساسية</small></div></div><label>اسم الطعام<input name="name" required placeholder="مثال: وجبات دجاج وأرز"></label><div class="form-row"><label>التصنيف<select name="category"><option>وجبات جاهزة</option><option>مخبوزات</option><option>خضروات وفواكه</option><option>حلويات</option></select></label><label>الكمية (وجبة)<input name="quantity" type="number" min="1" required placeholder="20"></label></div><div class="form-row"><label>وقت الانتهاء<input name="expiry" type="datetime-local" required></label><label>اسم الجهة<input name="donor" required placeholder="اسم المطعم أو المتبرع"></label></div><label>الموقع أو الحي<input name="location" required placeholder="مثال: حي الروضة"></label><button class="btn primary full" type="submit">نشر الفائض <span>←</span></button><p class="form-message" id="formMessage" aria-live="polite"></p></form></section>
+<section class="impact"><div><span class="impact-icon">🌱</span><div><b>معًا نقلل الهدر ونحفظ النعمة</b><p>كل وجبة تصل لمستفيد هي خطوة نحو مجتمع أكثر استدامة.</p></div></div><span class="impact-tag">هدفنا: صفر هدر يمكن تجنبه</span></section>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">♡</span><span>حفظ <b>النعمة</b><small>نعمة محفوظة، وأثر ممتد</small></span></a><p>© 2026 منصة حفظ النعمة — نموذج أولي للمشروع</p></footer>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
